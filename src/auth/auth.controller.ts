@@ -29,4 +29,11 @@ export class AuthController {
   info(@User() user: UserType) {
     return user;
   }
+
+  @UseGuards(JwtAuthGuard)
+  @Get('/logout')
+  logout(@Res({ passthrough: true }) res: Response) {
+    res.clearCookie('session');
+    return { message: 'Logged out successfully' };
+  }
 }
