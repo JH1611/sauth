@@ -12,7 +12,7 @@
 ## Endpoints
 
 - [x] /auth/sign-up [POST] 
-- [ ] /auth/sign-in [POST] 
+- [x] /auth/sign-in [POST] 
 - [ ] /auth/info [GET] (protected)
 - [ ] /protected [GET]
 - [ ] / [GET]
