@@ -14,6 +14,6 @@
 - [x] /auth/sign-up [POST] 
 - [x] /auth/sign-in [POST] 
 - [x] /auth/info [GET] (protected)
-- [ ] /auth/logout [GET] (protected)
-- [ ] /protected [GET]
-- [ ] / [GET]
+- [x] /auth/logout [GET] (protected)
+- [x] /protected [GET]
+- [x] / [GET]
