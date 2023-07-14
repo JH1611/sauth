@@ -18,6 +18,6 @@ export class SignUpDto {
         'The password must contain 8 characters, numbers, uppercase and lowercase letters and at least one symbol.',
     },
   )
-  @IsNotEmpty({ message: 'Passowrd is required' })
+  @IsNotEmpty({ message: 'Password is required' })
   password: string;
 }
