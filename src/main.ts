@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import { NestFactory } from '@nestjs/core';
+import helmet from 'helmet';
 import { AppModule } from './app.module';
 import { ValidationPipe } from './validation.pipe';
 import * as cookieParser from 'cookie-parser';
@@ -7,9 +8,11 @@ import { InvalidSessionExceptionFilter } from './exceptions/InvalidSessionExcept
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+  app.use(helmet());
+  app.use(cookieParser());
   app.useGlobalPipes(new ValidationPipe());
   app.useGlobalFilters(new InvalidSessionExceptionFilter());
-  app.use(cookieParser());
   await app.listen(4000);
 }
 bootstrap();

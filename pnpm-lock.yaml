@@ -41,9 +41,15 @@ dependencies:
   cookie-parser:
     specifier: ^1.4.6
     version: 1.4.6
+  csrf-csrf:
+    specifier: ^2.2.4
+    version: 2.2.4
   dotenv:
     specifier: ^16.3.1
     version: 16.3.1
+  helmet:
+    specifier: ^7.0.0
+    version: 7.0.0
   passport-jwt:
     specifier: ^4.0.1
     version: 4.0.1
@@ -2334,6 +2340,12 @@ packages:
     resolution: {integrity: sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==}
     dev: false
 
+  /csrf-csrf@2.2.4:
+    resolution: {integrity: sha512-LuhBmy5RfRmEfeqeYqgaAuS1eDpVtKZB/Eiec9xiKQLBynJxrGVRdM2yRT/YMl1Njo/yKh2L9AYsIwSlTPnx2A==}
+    dependencies:
+      http-errors: 2.0.0
+    dev: false
+
   /debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
     peerDependencies:
@@ -3094,6 +3106,11 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
+
+  /helmet@7.0.0:
+    resolution: {integrity: sha512-MsIgYmdBh460ZZ8cJC81q4XJknjG567wzEmv46WOBblDb6TUd3z8/GhgmsM9pn8g2B80tAJ4m5/d3Bi1KrSUBQ==}
+    engines: {node: '>=16.0.0'}
+    dev: false
 
   /hexoid@1.0.0:
     resolution: {integrity: sha512-QFLV0taWQOZtvIRIAdBChesmogZrtuXvVWsFHZTk2SU+anspqZ2vMnoLg7IE1+Uk16N19APic1BuF8bC8c2m5g==}
