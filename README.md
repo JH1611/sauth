@@ -17,3 +17,4 @@
 - [x] /auth/logout [GET] (protected)
 - [x] /protected [GET]
 - [x] / [GET]
+- [x] /csrf [GET]
