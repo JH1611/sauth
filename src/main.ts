@@ -9,6 +9,7 @@ import { InvalidSessionExceptionFilter } from './exceptions/InvalidSessionExcept
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  app.enableCors({ origin: process.env.FRONTEND_URL });
   app.use(helmet());
   app.use(cookieParser());
   app.useGlobalPipes(new ValidationPipe());
