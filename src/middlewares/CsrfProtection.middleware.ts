@@ -11,6 +11,7 @@ export class CsrfProtectionMiddleware implements NestMiddleware {
       cookieOptions: {
         httpOnly: true,
         sameSite: 'lax',
+        expires: new Date(Date.now() + 1000 * 60 * 60),
         path: '/',
         secure: true,
       },
